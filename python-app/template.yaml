@@ -28,15 +28,15 @@ spec:
             - qa
             - prod
 
-#  steps:
-#    - id: fetch-base
-#      name: Fetch Base
-#      action: fetch:template
-#      input:
-#        url: ./template
-#        values:
-#          app_name: ${{parameters.component_id}}
-#          app_env: ${{parameters.environment}}
+  steps:
+    - id: fetch-base
+      name: Fetch Base
+      action: fetch:template
+      input:
+        url: ./template
+        values:
+          app_name: ${{parameters.component_id}}
+          app_env: ${{parameters.environment}}
 #
 #    - id: publish
 #      name: Publish
